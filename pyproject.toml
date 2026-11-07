@@ -7,7 +7,9 @@ authors = [
     { name = "Daniel Pape", email = "mail@dpape.io" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pyspark==4.0.0",
+]
 
 [project.scripts]
 emr-serverless-wordcount-example = "emr_serverless_wordcount_example:main"
