@@ -1,3 +1,8 @@
+# ==================================================
+# Declares the actual EMR Serverless application and
+# configures it for a minimalistic word count batch
+# job.
+# ==================================================
 resource "aws_emrserverless_application" "serverless_emr_app" {
   name          = "serverless-emr-app"
   release_label = var.emr_release

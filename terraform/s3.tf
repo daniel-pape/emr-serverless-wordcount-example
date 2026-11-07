@@ -1,3 +1,9 @@
+# ==================================================
+# Declares two S3 buckets, one for the word count
+# script (or in general other scripts to be run)
+# and one for the input data. The sample script and
+# input data are uploaded using aws_s3_object resources
+# ==================================================
 resource "aws_s3_bucket" "scripts" {
   bucket = "scripts---${var.project_name}"
 }

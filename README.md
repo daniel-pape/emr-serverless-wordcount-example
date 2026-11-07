@@ -1,3 +1,8 @@
+# About
+
+This repository show cases how to deploy a EMR Serverless application
+and run word count as example batch job using it.
+
 # Pre-requisites
 
 * An AWS account
@@ -7,3 +12,4 @@
 
 1. Run `aws login`
 2. Run `terraform init`
+3. Run `terraform apply`
