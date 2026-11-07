@@ -1,0 +1,7 @@
+
+Hello world
+Hello Spark
+Apache Spark is powerful
+Word count example using PySpark
+Hello world from Amazon EMR
+Spark makes big data processing easier
