@@ -1,0 +1,17 @@
+[project]
+name = "emr-serverless-wordcount-example"
+version = "0.1.0"
+description = "Word count example using PySpark"
+readme = "README.md"
+authors = [
+    { name = "Daniel Pape", email = "mail@dpape.io" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+emr-serverless-wordcount-example = "emr_serverless_wordcount_example:main"
+
+[build-system]
+requires = ["uv_build>=0.12.24,<0.13.0"]
+build-backend = "uv_build"
