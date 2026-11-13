@@ -22,8 +22,8 @@ resource "aws_s3_object" "main_file" {
 
 resource "aws_s3_object" "input_file" {
   bucket = aws_s3_bucket.input.id
-  key    = "input.txt"
-  source = "${path.module}/../src/data/input.txt"
+  key    = "shakespeare_input.txt"
+  source = "${path.module}/../src/data/shakespeare_input.txt"
 
-  etag = filemd5("${path.module}/../src/data/input.txt")
+  etag = filemd5("${path.module}/../src/data/shakespeare_input.txt")
 }

@@ -7,7 +7,7 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M:%S"
 )
 
-INPUT_TXT = "s3://input---emr-serverless-wordcount-example/input.txt"
+INPUT_TXT = "s3://input---emr-serverless-wordcount-example/shakespeare_input.txt"
 
 logger = logging.getLogger(__name__)
 
