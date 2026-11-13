@@ -66,15 +66,7 @@ def main() -> None:
     text_file: RDD[str] = spark.sparkContext.textFile(INPUT_TXT)
 
     logger.info(f"Computing counts...")
-    counts = (
-        text_file
-        .flatMap(lambda line:  line.split(" "))
-        .map(lambda word: (word, 1))
-        .reduceByKey(lambda a, b: a + b)
-        .sortBy(lambda x: x[1], False)
-    )
-
-    counts_df = counts.toDF(["word", "count"])
+    counts_df  = wordcount(text_file, spark)
 
     logger.info("Top-10 word counts:")
     counts_df.show(10, False)
