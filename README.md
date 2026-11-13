@@ -1,6 +1,6 @@
 # About
 
-This repository show cases how to deploy a EMR Serverless application
+This repository showcases how to deploy a EMR Serverless application
 and run word count as example batch job using it.
 
 # Pre-requisites
